@@ -8,8 +8,6 @@ module Subscriber
       return unless message["event"] == "preparation"
 
       device = ::Device.find_by mac: message["mac"].to_s
-      # Recursively call on_preparation if device is nil
-      # caused by other call (maybe from db transaction)
       return if device.nil?
 
       device.send_auth_message
