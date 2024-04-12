@@ -16,7 +16,7 @@ module Helpers
 
       def self.init(auth_payload)
         auth = DeviceAuth.from_json(auth_payload)
-        new(auth.topic, auth.mac, auth.api_key)
+        new auth.topic, auth.mac, auth.api_key
       end
 
       def initialize(@topic, @mac, @api_key)

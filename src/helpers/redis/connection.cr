@@ -26,7 +26,7 @@ module Helpers
         connection = @redis_pool.checkout
         yield connection
       ensure
-        @redis_pool.checkin(connection) if connection
+        @redis_pool.checkin connection if connection
       end
     end
   end

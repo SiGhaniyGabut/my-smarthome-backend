@@ -18,7 +18,7 @@ module Helpers
       property payload : Hash(String, JSON::Any)
   
       def self.create(message)
-        Body.from_json(%(#{message.to_json}))
+        Body.from_json %(#{message.to_json})
       end
     end
   end

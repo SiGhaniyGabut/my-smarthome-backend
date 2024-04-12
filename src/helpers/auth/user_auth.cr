@@ -23,7 +23,7 @@ module Helpers
 
       def self.bearer_token(headers)
         authorization = headers["Authorization"]
-        authorization.gsub(/^Bearer /, "") if authorization && authorization.match(/^Bearer /)
+        authorization.gsub /^Bearer /, "" if authorization && authorization.match /^Bearer /
       end
 
       def self.init(auth_payload)

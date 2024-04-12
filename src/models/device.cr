@@ -9,14 +9,14 @@ class Device < Granite::Base
   table devices
 
   has_one :api_key
-  has_many :switches, class_name: "Switch"
+  has_many :switches, class_name: Switch
   belongs_to :user
 
   validate_not_nil :name
   validate_not_nil :mac
   validate_not_nil :user_id
 
-  validate :mac, "must be in upcase, split by -, and valid mac character" { |device| mac_valid?(device.mac.not_nil!) }
+  validate :mac, "must be in upcase, split by -, and valid mac character" { |device| mac_valid? device.mac.not_nil! }
 
   before_create :generate_uuid
   before_save :generate_topic_channel
