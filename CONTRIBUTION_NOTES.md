@@ -27,7 +27,8 @@ To stay on the list, projects should follow these quality standards:
 - Use descriptive names for variables, functions, classes, etc.
 - Use `?` suffix for methods that return booleans.
 - Use `!` suffix for methods that modify the object.
-- Add spaces after curly brackets if that is a one-line block, otherwise (like Hashes or NamedTuple) don't add.
+- Add spaces inside curly brackets if that is a one-line block, otherwise (like Hashes or NamedTuple) don't.
+- Add new line after guard clauses.
 - Try to ignore parentheses on method calls **when possible**, this will make the code cleaner and more human-like.
 - Try to use Guard Clauses instead of Nested Conditionals.
 - For methods call chains that each method call requires paramaters, add a new line for each method call.
