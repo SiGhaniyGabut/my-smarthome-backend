@@ -47,4 +47,4 @@ crystal spec
 
 ## Contributors
 
-- [your-github-user](https://github.com/your-github-user) Abdul Hakim Ghaniy - creator, maintainer
+- [SiGhaniyGabut](https://github.com/SiGhaniyGabut) Abdul Hakim Ghaniy - creator, maintainer
