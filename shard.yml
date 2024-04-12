@@ -1,0 +1,59 @@
+name: my-smarthome-backend
+version: 0.1.0
+
+authors:
+  - Abdul Hakim Ghaniy <abdulhakimghaniy@outlook.co.id>
+
+crystal: 1.11.2
+
+license: UNLICENSED
+
+targets:
+  my-smarthome-backend:
+    main: src/my-smarthome-backend.cr
+
+  amber:
+    main: lib/amber/src/amber/cli.cr
+
+dependencies:
+  amber:
+    github: amberframework/amber
+    version: 1.4.1
+
+  granite:
+    github: amberframework/granite
+    version: ~> 0.23.1
+
+  quartz_mailer:
+    github: amberframework/quartz-mailer
+    version: ~> 0.8.0
+
+  jasper_helpers:
+    github: amberframework/jasper-helpers
+    version: ~> 1.2.2 
+
+  pg:
+    github: will/crystal-pg
+    version: ~> 0.26.0
+
+  citrine-i18n:
+    github: dare892/citrine-i18n
+    version: ~> 1.0.0
+
+  pool:
+    github: ysbaddaden/pool
+    version: ~> 0.2.4
+
+  sidekiq:
+    github: mperham/sidekiq.cr
+
+  crest:
+    github: mamantoha/crest
+
+  jwt:
+    github: crystal-community/jwt
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 1.5.0
